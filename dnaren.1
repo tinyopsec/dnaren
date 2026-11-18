@@ -1,0 +1,50 @@
+.TH DNAREN 1 "VERSION" "dnaren manual"
+.SH NAME
+dnaren - minimal DNA renderer
+.SH SYNOPSIS
+.B dnaren
+.RB [ -v ]
+.SH DESCRIPTION
+dnaren renders a right-handed DNA double helix using X11 and OpenGL, with
+major and minor groove, backbones, and base pairs colored by base (A-T, G-C)
+joined by hydrogen bonds. Window title shows speed, pause state, and palette.
+.SH OPTIONS
+.TP
+.B -v
+Print version and exit.
+.SH CONTROLS
+.TP
+ESC, q
+Quit.
+.TP
+Space
+Pause rotation.
+.TP
++, -
+Increase or decrease rotation speed (main and keypad).
+.TP
+0
+Reset speed (main and keypad).
+.TP
+Arrow keys, WASD
+Rotate camera.
+.TP
+z, x
+Zoom in and out.
+.TP
+r
+Reset camera.
+.TP
+c
+Cycle color scheme.
+.TP
+f, F11
+Toggle fullscreen.
+.TP
+Mouse drag
+Rotate camera (auto-rotation pauses while button held).
+.TP
+Mouse wheel
+Zoom in and out.
+.SH SEE ALSO
+.BR glx (3)
